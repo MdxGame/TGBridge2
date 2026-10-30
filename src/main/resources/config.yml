@@ -1,0 +1,39 @@
+# Токен бота от @BotFather
+bot-token: "PASTE_TOKEN_HERE"
+
+# Telegram ID админов. Только они могут управлять сервером.
+# Свой ID узнаете, написав боту /start
+admins: []
+
+# Чаты для уведомлений (ID). Если пусто — уведомления получают все админы
+notify-chats: []
+
+# Если сервер не может подключиться к Telegram (HttpConnectTimeoutException) —
+# укажите HTTP-прокси (SOCKS не поддерживается). username/password — если нужна авторизация
+proxy:
+  host: ""
+  port: 0
+  username: ""
+  password: ""
+
+# Свой адрес Telegram API (например, reverse-proxy / Cloudflare Worker).
+# Пусто = https://api.telegram.org
+api-url: ""
+
+# Разрешить команду /cmd (любая консольная команда)
+allow-console-commands: true
+
+notifications:
+  enabled: true
+  join: true
+  quit: true
+  server-start: true
+  server-stop: true
+  join-message: "🟢 {player} зашёл на сервер (онлайн: {online})"
+  quit-message: "🔴 {player} вышел с сервера (онлайн: {online})"
+
+# Исключения: об этих игроках уведомлений не будет.
+# Регистр не важен. Звёздочка в конце = маска: "Bot_*"
+# Также исключён любой игрок с правом tgbot.silent
+# Редактировать можно и командой /exclude в Telegram или /tgbot exclude в игре
+excluded-players: []

@@ -1,0 +1,16 @@
+name: TgBridge
+version: '1.0.0'
+main: dev.tgbridge.TgBridgePlugin
+api-version: '26.2'
+description: Управление сервером через Telegram-бота и уведомления о входе/выходе игроков
+commands:
+  tgbot:
+    description: Управление TgBridge
+    usage: /tgbot <reload|test|notify|exclude>
+    permission: tgbot.admin
+permissions:
+  tgbot.admin:
+    default: op
+  tgbot.silent:
+    description: Игрок с этим правом не вызывает уведомления о входе/выходе
+    default: false
